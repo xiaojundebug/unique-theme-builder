@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+const program = require('commander')
+const main = require('../index.js')
+const config = {}
+
+program
+.version(require('../package.json').version)
+.option('-o, --output [path]', 'output path', path => config.outputPath = path.resolve(process.cwd(), path + ''))
+.parse(process.argv)
+
+main.run(config)

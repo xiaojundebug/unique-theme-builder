@@ -1,0 +1,19 @@
+{
+  "name": "unique-theme-builder",
+  "version": "1.0.2",
+  "bin": {
+    "utb": "bin/unique-theme-builder"
+  },
+  "license": "MIT",
+  "description": "unique-ui 命令行主题构建工具",
+  "repository": "git@github.com:xiaojun1994/unique-theme-builder.git",
+  "author": "xiaojun1994 <362896731@qq.com>",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^4.0.2",
+    "ora": "^3.4.0"
+  }
+}
