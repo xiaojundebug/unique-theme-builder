@@ -1,6 +1,6 @@
 {
   "name": "unique-theme-builder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "bin": {
     "utb": "bin/unique-theme-builder"
   },
@@ -9,6 +9,7 @@
   "repository": "git@github.com:xiaojun1994/unique-theme-builder.git",
   "author": "xiaojun1994 <362896731@qq.com>",
   "dependencies": {
+    "chalk": "^2.4.2",
     "commander": "^2.20.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",

@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 
+const path = require('path')
 const program = require('commander')
 const main = require('../index.js')
 const config = {}
 
 program
-.version(require('../package.json').version)
-.option('-o, --output [path]', 'output path', path => config.outputPath = path.resolve(process.cwd(), path + ''))
+.version(require('../package.json').version, '-v, --version')
+.option('-o, --output [path]', 'output path', _ => config.outputPath = path.resolve(process.cwd(), _ + ''))
 .parse(process.argv)
 
 main.run(config)
